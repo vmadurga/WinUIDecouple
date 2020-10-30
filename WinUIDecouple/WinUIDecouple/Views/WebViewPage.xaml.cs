@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Toolkit.Mvvm.DependencyInjection;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
 using WinUIDecouple.ViewModels;
@@ -14,7 +15,26 @@ namespace WinUIDecouple.Views
         {
             ViewModel = Ioc.Default.GetService<WebViewViewModel>();
             InitializeComponent();
-            ViewModel.Initialize(webView);
+        }
+
+        private void Button_OnBrowserBack(object sender, RoutedEventArgs e)
+        {
+            webView.GoBack();
+        }
+
+        private void Button_OnBrowserForward(object sender, RoutedEventArgs e)
+        {
+            webView.GoForward();
+        }
+
+        private void Button_OnReload(object sender, RoutedEventArgs e)
+        {
+            webView.Reload();
+        }
+
+        private void Hypenlink_OnReload(object sender, RoutedEventArgs e)
+        {
+            webView.Reload();
         }
     }
 }
