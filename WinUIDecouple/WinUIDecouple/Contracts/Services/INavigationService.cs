@@ -15,6 +15,8 @@ namespace WinUIDecouple.Contracts.Services
 
         void SetNavigationFrame(Frame frame);
 
-        Frame GetNavigationFrame();
+        void SetListDataAnimation(object item);
+
+        object GetContentNavigation();
     }
 }

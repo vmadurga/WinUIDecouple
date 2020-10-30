@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using Microsoft.Toolkit.Uwp.UI.Animations;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 
@@ -68,9 +69,14 @@ namespace WinUIDecouple.Services
             Frame = frame;
         }
 
-        public Frame GetNavigationFrame()
+        public void SetListDataAnimation(object item)
         {
-            return _frame;
+            Frame.SetListDataItemForNextConnectedAnimation(item);
+        }
+
+        public object GetContentNavigation()
+        {
+            return Frame.Content;
         }
 
         public bool NavigateTo(string pageKey, object parameter = null, bool clearNavigation = false)

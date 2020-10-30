@@ -31,7 +31,7 @@ namespace WinUIDecouple.Views
             if (e.NavigationMode == NavigationMode.Back)
             {
                 var navigationService = Ioc.Default.GetService<INavigationService>();
-                navigationService.GetNavigationFrame().SetListDataItemForNextConnectedAnimation(ViewModel.Item);
+                navigationService.SetListDataAnimation(ViewModel.Item);
             }
         }
     }

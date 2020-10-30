@@ -49,7 +49,7 @@ namespace WinUIDecouple.ViewModels
         {
             if (clickedItem != null)
             {
-                _navigationService.GetNavigationFrame().SetListDataItemForNextConnectedAnimation(clickedItem);
+                _navigationService.SetListDataAnimation(clickedItem);
                 _navigationService.NavigateTo(typeof(ContentGridDetailViewModel).FullName, clickedItem.OrderID);
             }
         }
