@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
-using Microsoft.Toolkit.Uwp.UI.Animations;
-
 using WinUIDecouple.Contracts.Services;
 using WinUIDecouple.Contracts.ViewModels;
 using WinUIDecouple.Core.Contracts.Services;

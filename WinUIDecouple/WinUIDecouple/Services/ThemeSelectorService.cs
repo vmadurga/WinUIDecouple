@@ -4,8 +4,6 @@ using System.Threading.Tasks;
 using Microsoft.UI.Xaml;
 
 using Windows.Storage;
-using Windows.UI.Core;
-
 using WinUIDecouple.Contracts.Services;
 using WinUIDecouple.Helpers;
 
