@@ -47,7 +47,7 @@ namespace WinUIDecouple.ViewModels
         public void Initialize(Frame frame, NavigationView navigationView)
         {
             _navigationView = navigationView;
-            _navigationService.Frame = frame;
+            _navigationService.SetNavigationFrame(frame);
             _navigationView.BackRequested += OnBackRequested;
         }
 

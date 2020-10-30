@@ -9,10 +9,10 @@ namespace WinUIDecouple.Contracts.Services
 
         bool CanGoBack { get; }
 
-        Frame Frame { get; set; }
-
         bool NavigateTo(string pageKey, object parameter = null, bool clearNavigation = false);
 
         void GoBack();
+
+        void SetNavigationFrame(Frame frame);
     }
 }

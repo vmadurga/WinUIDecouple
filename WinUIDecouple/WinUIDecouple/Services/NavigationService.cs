@@ -63,6 +63,11 @@ namespace WinUIDecouple.Services
         public void GoBack()
             => _frame.GoBack();
 
+        public void SetNavigationFrame(Frame frame)
+        {
+            Frame = frame;
+        }
+
         public bool NavigateTo(string pageKey, object parameter = null, bool clearNavigation = false)
         {
             var pageType = _pageService.GetPageType(pageKey);
