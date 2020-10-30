@@ -26,7 +26,7 @@ namespace WinUIDecouple.Activation
         protected override bool CanHandleInternal(LaunchActivatedEventArgs args)
         {
             // None of the ActivationHandlers has handled the app activation
-            return _navigationService.Frame.Content == null;
+            return _navigationService.GetNavigationFrame().Content == null;
         }
     }
 }

@@ -14,5 +14,7 @@ namespace WinUIDecouple.Contracts.Services
         void GoBack();
 
         void SetNavigationFrame(Frame frame);
+
+        Frame GetNavigationFrame();
     }
 }
